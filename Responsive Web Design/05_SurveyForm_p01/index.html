@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label">Name</label>
+      <input id="name" type="text" required placeholder="Enter your name" />
+      <label id="email-label">E-mail</label>
+      <input id="email" type="email" required placeholder="Enter your e-mail" />
+      <label id="number-label">Age (optional)</label>
+      <input id="number" type="number" placeholder="Age" min="14" max="80" />
+      <label id="role-label">
+        Which option best describes your current role?
+      </label>
+      <select id="dropdown">
+        <option>Select current role</option>
+        <option>Undergraduate student</option>
+        <option>Postgraduate student</option>
+      </select>
+      <label id="recomendation-label">
+        Would you recommend freeCodeCamp to a friend?
+      </label>
+      <input type="radio" value="definitely" name="option" />
+      Definitely
+      <input type="radio" value="maybe" name="option" />
+      Maybe
+      <input type="radio" value="not-sure" name="option" />
+      Not sure
+      <label>
+        Wich courses would you like to attend? (Check all that apply)
+      </label>
+      <input type="checkbox" value="back-end" />
+      Back-end Development
+      <input type="checkbox" value="front-end" />
+      Front-end Development
+      <input type="checkbox" value="db" />
+      Database
+      <input type="checkbox" value="java" />
+      Java
+      <input type="checkbox" value="c#" />
+      C#
+      <label>Any comments or suggestions?</label>
+      <textarea id="comments" rows="5" cols="40"></textarea>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
